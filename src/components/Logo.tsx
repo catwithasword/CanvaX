@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 
 interface LogoProps {
@@ -10,7 +11,14 @@ export const Logo = ({ size = 32 }: LogoProps) => {
   const s = size;
   return (
     <div title="CanvaX" style={{ width: s, height: s }} className="flex items-center justify-center">
-      <img src="/logo.svg" alt="CanvaX" style={{ width: s, height: s, objectFit: 'contain' }} />
+      <Image
+        src="/logo.svg"
+        alt="CanvaX"
+        width={s}
+        height={s}
+        style={{ width: s, height: s, objectFit: 'contain' }}
+        priority
+      />
     </div>
   );
 };

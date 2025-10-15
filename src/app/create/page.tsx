@@ -148,8 +148,8 @@ export default function CreatePage() {
         const createdCanvas = document.createElement('canvas');
         createdCanvas.width = 800;
         createdCanvas.height = 600;
-        // ensure it's styled as block by default; pixel mode will toggle visibility
-        createdCanvas.style.display = mode === 'pixel' ? 'none' : 'block';
+        // ensure it starts visible; pixel mode toggles visibility after mount
+        createdCanvas.style.display = 'block';
         // append before pixel canvas (pixel canvas is absolute overlay)
         canvasContainerRef.current.appendChild(createdCanvas);
 
@@ -939,7 +939,7 @@ export default function CreatePage() {
               <div className="border border-border rounded-xl p-4 space-y-3">
                 <h3 className="font-semibold mb-3">Next Steps</h3>
                 <p className="text-sm text-muted-foreground">
-                  Once you're happy with your artwork, export it and mint it as an NFT 
+                  Once you&apos;re happy with your artwork, export it and mint it as an NFT 
                   to prove its human origin.
                 </p>
                 <Button className="w-full hover-invert" disabled>

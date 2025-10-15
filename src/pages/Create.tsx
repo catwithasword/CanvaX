@@ -125,7 +125,7 @@ const Create = () => {
               <div className="border border-border rounded-xl p-4 space-y-3">
                 <h3 className="font-semibold mb-3">Next Steps</h3>
                 <p className="text-sm text-muted-foreground">
-                  Once you're happy with your artwork, export it and mint it as an NFT 
+                  Once you&apos;re happy with your artwork, export it and mint it as an NFT 
                   to prove its human origin.
                 </p>
                 <Button className="w-full hover-invert" disabled>
