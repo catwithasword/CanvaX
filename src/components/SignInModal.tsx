@@ -2,6 +2,7 @@
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/Logo";
 import { Shield, Wallet } from "lucide-react";
 import { useRouter } from 'next/navigation';
 
@@ -23,8 +24,8 @@ export const SignInModal = ({ open, onOpenChange }: SignInModalProps) => {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md border-2 border-primary">
         <DialogHeader className="space-y-4">
-          <div className="mx-auto w-16 h-16 rounded-full bg-primary flex items-center justify-center">
-            <Shield className="w-8 h-8 text-primary-foreground" />
+          <div className="mx-auto">
+            <Logo size={64} />
           </div>
           <DialogTitle className="text-2xl font-semibold text-center">
             CanvaX
